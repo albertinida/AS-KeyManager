@@ -17,7 +17,7 @@ public class IndexController {
 
 		JSONObject output = new JSONObject();
 		output.put("result", "test successful");
-		output.put("warning", "you bastard are sniffing my POST message");
+		output.put("warning", "you dirty bastard are sniffing my POST message");
 		
 		return output.toString();
 	}
