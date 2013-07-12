@@ -1,5 +1,7 @@
 package it.uninsubria.dista.keymanager.controllers;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.stereotype.Controller;
@@ -22,5 +24,10 @@ public class IndexController {
 		return output.toString();
 	}
 
+	@RequestMapping(value = "/", produces = "text/html", method = RequestMethod.GET)
+	public String indexGet(Model uiModel) {
+
+		return "index";
+	}
 	
 }
