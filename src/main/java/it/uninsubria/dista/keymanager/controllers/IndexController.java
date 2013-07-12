@@ -16,7 +16,8 @@ public class IndexController {
 	public String index(Model uiModel) throws JSONException {
 
 		JSONObject output = new JSONObject();
-		output.put("response", "test successful");
+		output.put("result", "test successful");
+		output.put("warning", "you bastard are sniffing my POST message");
 		
 		return output.toString();
 	}
